@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FracNum.cpp" />
+    <ClCompile Include="IError.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Sem 3 Lab 4.cpp" />
@@ -149,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FracNum.h" />
+    <ClInclude Include="IError.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="Game.h" />
   </ItemGroup>
