@@ -20,7 +20,7 @@ private:
 	int count;
 	bool CheatMode;
 public:
-	//Logger logger;
+	Logger logger;
 	FunnyGame();
 	int Start();
 	void GridsResize(int num);

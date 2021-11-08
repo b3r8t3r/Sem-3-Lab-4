@@ -4,14 +4,17 @@
 
 using namespace std;
 
-Logger::Logger(const string& str) : nameClass(str) {
-    cout << endl << "Construct " << str << endl;
+bool Enable = false;
+
+Logger::Logger(const string& str, const bool _enable) : nameClass(str, _enable) {
+    enable = _enable;
+    if (enable) cout << endl << "Construct " << str << endl;
 }
 
 Logger::~Logger() {
-    cout << endl << "Destruct " << nameClass << endl;
+    if (enable) cout << endl << "Destruct " << nameClass << endl;
 }
 
-void Logger::OutFuctName(string name) {
-    cout << "Function " << name << " begin to work." << endl;
+void Logger::OutFuctName(string name, const bool _enable) {
+    if (_enable) cout << "Function " << name << " begin to work." << endl;
 }

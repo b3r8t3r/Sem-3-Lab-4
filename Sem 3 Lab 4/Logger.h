@@ -3,12 +3,15 @@
 
 using namespace std;
 
+extern bool Enable;
+
 class Logger {
 public:
-    Logger(const string& str);
+    bool enable;
+    Logger(const string& str, const bool _enable = false);
 
     ~Logger();
-    void OutFuctName(string name);
+    void OutFuctName(string name, const bool _enable);
 
     string nameClass;
 };
