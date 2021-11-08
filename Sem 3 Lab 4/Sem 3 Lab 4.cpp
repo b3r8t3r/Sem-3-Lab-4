@@ -20,7 +20,6 @@ void FracNumTest() {
 	cout << "(a+b) = " << (a + b) << endl;
 	cout << "(a-b) = " << (a - b) << endl;
 	cout << "(a*b) = " << (a * b) << endl;
-	//cout << "(a^b) = " << (a ^ b) << endl;
 	cout << "(a^x) = " << (a ^ x) << endl;
 	cout << "(b^x) = " << (b ^ x) << endl;
 	FracNum c = a;
@@ -67,8 +66,7 @@ int main(){
 			  break;
 		}
 	}
-	/*cin.ignore(32767, '\n');
-	_choice = "";*/
+	
 	cout << "\nВыберите, какое задание включить:\n1. Работа с дробями.\n2. Игра.\n: ";
 	try {
 
@@ -97,8 +95,5 @@ int main(){
 		FunnyGame Game;
 	}
 	}
-	
-	//FunnyGame a;
-	//cout << pow(4,-1) << endl;
 
 }

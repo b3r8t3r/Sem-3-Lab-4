@@ -28,7 +28,6 @@ public:
     friend FracNum operator*(const FracNum& fn1, const FracNum& fn2);
     friend FracNum operator/(const FracNum& fn1, const FracNum& fn2);
     friend FracNum operator^(const FracNum& fn, int power);
-    /*friend FracNum operator^(const FracNum& fn1, const FracNum& fn2);*/
     FracNum& operator= (const FracNum& fn1);
     //Логичекие операторы
     friend bool operator>(const FracNum& fn1, const FracNum& fn2);

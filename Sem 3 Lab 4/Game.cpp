@@ -172,18 +172,6 @@ void FunnyGame::CheckDot(int num) {
 			}
 		}
 
-
-
-		/*do {
-			cin >> x;
-			cout << ": ";
-			cin >> y;
-			
-			if ((x < 0) || (x >= num) || (y < 0) || (y >= num)) cout << "Coords are incorrect. Please, try again:\n: ";
-			else if (PRow[y][x]) cout << "This coords are unavaliable. Please, try again:\n: ";
-			else cout << "\n\n";
-		} while ((x < 0) || (x >= num) || (y < 0) || (y >= num) || PRow[y][x]);*/
-
 		PRow[stoi(y)][stoi(x)] = true;
 
 		if (Row[stoi(y)][stoi(x)]) count++;

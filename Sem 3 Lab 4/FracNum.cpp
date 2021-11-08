@@ -24,18 +24,9 @@ FracNum::FracNum(double num, double denum) : logger("FracNum2", Enable) {
         num = 0;
         denum = 1;
         abort();
-        //return;
     }
 
     Numerator = num;
-    /*try{
-        Denominator = denum;
-        if (!Denominator) throw invalid_argument("");
-    }
-    catch (invalid_argument) {
-        cout << "Warning! Denomentor is equal 0! ";
-        abort();
-    }*/
 
     Denominator = denum;
     
