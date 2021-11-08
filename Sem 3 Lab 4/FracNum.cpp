@@ -29,7 +29,6 @@ FracNum::FracNum(double num, double denum) : logger("FracNum2", Enable) {
     Numerator = num;
 
     Denominator = denum;
-    
 
     Nod = GCD(Numerator, Denominator);
     Numerator /= Nod;

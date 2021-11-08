@@ -7,13 +7,13 @@
 
 using namespace std;
 
-int GCD(int x, int y); 	//Нахождение НОД
+int GCD(int x, int y);  //Нахождение НОД
 
-class FracNum {
+class FracNum {    //Класс работы с дробями
 private:
-    double Numerator;
-    double Denominator;
-    double Nod;
+    double Numerator;       //Числитель
+    double Denominator;     //Знаменатель
+    double Nod;             //НОД (наибольшй общий делитель)
 public:
     Logger logger;
     FracNum();
@@ -49,7 +49,6 @@ FracNum operator-(const FracNum& fn1, const FracNum& fn2);
 FracNum operator*(const FracNum& fn1, const FracNum& fn2);
 FracNum operator/(const FracNum& fn1, const FracNum& fn2);
 FracNum operator^(const FracNum& fn, int power);
-//FracNum operator^(const FracNum& fn1, const FracNum& fn2);
 
 bool operator>(const FracNum& fn1, const FracNum& fn2);
 bool operator>=(const FracNum& fn1, const FracNum& fn2);

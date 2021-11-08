@@ -16,19 +16,19 @@ const int HARD = 20;
 class FunnyGame {
 private:
 	vector< vector <bool> > Row , PRow;
-	int Difficulty;
+	int Difficulty; //Переменная, отвечающая за 
 	int count;
 	bool CheatMode;
 public:
 	Logger logger;
-	FunnyGame();
-	int Start();
+	FunnyGame(); //Инициализация игры
+	int Start(); //
 	void GridsResize(int num);
 	void RowFill(int num);
 	bool random();
 	void ShowPlayerGrid(int num);
 	void ShowGrids(int num);
 	void CheckDot(int num);
-	bool isWin(int num);
+	bool isWin(int num);	//Функция для определения победы
 };
 

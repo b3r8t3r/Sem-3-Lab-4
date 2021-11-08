@@ -5,11 +5,11 @@ using namespace std;
 
 FunnyGame::FunnyGame() : logger("FunnyGame", Enable) {
 	srand(time(0));
-	int num = Start();
-	GridsResize(num);
-	RowFill(num);
-	CheckDot(num);
-	isWin(num);
+	Difficulty = Start();
+	GridsResize(Difficulty);
+	RowFill(Difficulty);
+	CheckDot(Difficulty);
+	isWin(Difficulty);
 }
 
 int FunnyGame::Start() {
