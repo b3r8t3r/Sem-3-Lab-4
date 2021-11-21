@@ -13,7 +13,7 @@ void FracNumTest() {
 	FracNum a, b;
 	cin >> a;
 	cin >> b;
-	int x = -5;
+	int x = 5;
 	cout << "a = " << a << endl;
 	cout << "b = " << b << endl;
 	cout << "x = " << x << endl;
