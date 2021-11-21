@@ -20,14 +20,29 @@ void FracNumTest() {
 	cout << "(a+b) = " << (a + b) << endl;
 	cout << "(a-b) = " << (a - b) << endl;
 	cout << "(a*b) = " << (a * b) << endl;
+	cout << "(a/b) = " << (a / b) << endl;
+
+	cout << "(a+x) = " << (a + x) << endl;
+	cout << "(a-x) = " << (a - x) << endl;
+	cout << "(a*x) = " << (a * x) << endl;
+	cout << "(a/x) = " << (a / x) << endl;
+
+	cout << "(b+x) = " << (b + x) << endl;
+	cout << "(b-x) = " << (b - x) << endl;
+	cout << "(b*x) = " << (b * x) << endl;
+	cout << "(b/x) = " << (b / x) << endl;
+
 	cout << "(a^x) = " << (a ^ x) << endl;
 	cout << "(b^x) = " << (b ^ x) << endl;
+	cout << "(a^-1) = " << (a ^ -1) << endl;
+	cout << "(b^-1) = " << (b ^ -1) << endl;
 	FracNum c = a;
 	cout << "(a=b) = " << (a = b) << endl;
 	a = c;
 	cout << "(a>b) = " << (a > b) << endl;
 	cout << "(a>=b) = " << (a >= b) << endl;
 	cout << "(a==b) = " << (a == b) << endl;
+	cout << "(a!=b) = " << (a != b) << endl;
 	cout << "(a<=b) = " << (a <= b) << endl;
 	cout << "(a<b) = " << (a < b) << endl;
 }

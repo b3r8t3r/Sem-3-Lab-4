@@ -27,12 +27,19 @@ public:
     friend FracNum operator-(const FracNum& fn1, const FracNum& fn2);
     friend FracNum operator*(const FracNum& fn1, const FracNum& fn2);
     friend FracNum operator/(const FracNum& fn1, const FracNum& fn2);
-    friend FracNum operator^(const FracNum& fn, int power);
+    friend FracNum operator^(const FracNum& fn, const int& power);
+
+    friend FracNum operator+(const FracNum& fn, const int& inc);
+    friend FracNum operator-(const FracNum& fn, const int& dec);
+    friend FracNum operator*(const FracNum& fn, const int& mul);
+    friend FracNum operator/(const FracNum& fn, const int& div);
+
     FracNum& operator= (const FracNum& fn1);
     //Логичекие операторы
     friend bool operator>(const FracNum& fn1, const FracNum& fn2);
     friend bool operator>=(const FracNum& fn1, const FracNum& fn2);
     friend bool operator==(const FracNum& fn1, const FracNum& fn2);
+    friend bool operator!=(const FracNum& fn1, const FracNum& fn2);
     friend bool operator<=(const FracNum& fn1, const FracNum& fn2);
     friend bool operator<(const FracNum& fn1, const FracNum& fn2);
 };
@@ -48,10 +55,16 @@ FracNum operator+(const FracNum& fn1, const FracNum& fn2);
 FracNum operator-(const FracNum& fn1, const FracNum& fn2);
 FracNum operator*(const FracNum& fn1, const FracNum& fn2);
 FracNum operator/(const FracNum& fn1, const FracNum& fn2);
-FracNum operator^(const FracNum& fn, int power);
+FracNum operator^(const FracNum& fn, const int & power);
+
+FracNum operator+(const FracNum& fn, const int& inc);
+FracNum operator-(const FracNum& fn, const int& dec);
+FracNum operator*(const FracNum& fn, const int& mul);
+FracNum operator/(const FracNum& fn, const int& div);
 
 bool operator>(const FracNum& fn1, const FracNum& fn2);
 bool operator>=(const FracNum& fn1, const FracNum& fn2);
 bool operator==(const FracNum& fn1, const FracNum& fn2);
+bool operator!=(const FracNum& fn1, const FracNum& fn2);
 bool operator<(const FracNum& fn1, const FracNum& fn2);
 bool operator<=(const FracNum& fn1, const FracNum& fn2);

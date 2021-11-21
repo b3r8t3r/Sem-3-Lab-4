@@ -93,7 +93,7 @@ FracNum& FracNum::operator= (const FracNum& fn) {
 }
 
 FracNum operator+(const FracNum& fn1, const FracNum& fn2) {
-    Logger a("Addition", Enable);
+    Logger a("Addition FracNum", Enable);
     if (fn1.Denominator == fn2.Denominator) {
         FracNum fn3(fn1.Numerator + fn2.Numerator, fn1.Denominator);
         return fn3;
@@ -105,7 +105,7 @@ FracNum operator+(const FracNum& fn1, const FracNum& fn2) {
 }
 
 FracNum operator-(const FracNum& fn1, const FracNum& fn2) {
-    Logger a("Subtraction", Enable);
+    Logger a("Subtraction FracNum", Enable);
     if (fn1.Denominator == fn2.Denominator) {
         FracNum fn3(fn1.Numerator - fn2.Numerator, fn1.Denominator);
         return fn3;
@@ -117,18 +117,18 @@ FracNum operator-(const FracNum& fn1, const FracNum& fn2) {
 }
 
 FracNum operator*(const FracNum& fn1, const FracNum& fn2) {
-    Logger a("Multiplication", Enable);
+    Logger a("Multiplication FracNum", Enable);
     FracNum fn3(fn1.Numerator * fn2.Numerator, fn1.Denominator * fn2.Denominator);
     return fn3;
 }
 
 FracNum operator/(const FracNum& fn1, const FracNum& fn2) {
-    Logger a("Division", Enable);
+    Logger a("Division FracNum", Enable);
     FracNum fn3(fn1.Numerator * fn2.Denominator, fn1.Denominator * fn2.Numerator);
     return fn3;
 }
 
-FracNum operator^(const FracNum& fn, int power) {
+FracNum operator^(const FracNum& fn, const int & power) {
     Logger a("Power", Enable);
     if (!power) {
         FracNum fn3(1,1);
@@ -150,6 +150,32 @@ FracNum operator^(const FracNum& fn, int power) {
 
 
 
+FracNum operator+(const FracNum& fn, const int& inc) {
+    Logger a("Addition int", Enable);
+    FracNum fn2(fn.Numerator+inc*fn.Denominator,fn.Denominator);
+    return fn2;
+}
+
+FracNum operator-(const FracNum& fn, const int& dec) {
+    Logger a("Subtraction int", Enable);
+    FracNum fn2(fn.Numerator - dec * fn.Denominator, fn.Denominator);
+    return fn2;
+}
+
+FracNum operator*(const FracNum& fn, const int& mul) {
+    Logger a("Multiplication int", Enable);
+    FracNum fn2(fn.Numerator * mul, fn.Denominator);
+    return fn2;
+}
+
+FracNum operator/(const FracNum& fn, const int& div) {
+    Logger a("Division int", Enable);
+    FracNum fn2(fn.Numerator, fn.Denominator * div);
+    return fn2;
+}
+
+
+
 bool operator>(const FracNum& fn1, const FracNum& fn2) {
     Logger a("More", Enable);
     int expr1 = fn1.Numerator * fn2.Denominator - fn2.Numerator * fn1.Denominator;
@@ -167,6 +193,11 @@ bool operator>=(const FracNum& fn1, const FracNum& fn2) {
 bool operator==(const FracNum& fn1, const FracNum& fn2) {
     Logger a("Equal", Enable);
     return (fn1.Numerator == fn2.Numerator && fn1.Denominator == fn2.Denominator);
+}
+
+bool operator!=(const FracNum& fn1, const FracNum& fn2) {
+    Logger a("Not equal", Enable);
+    return !(fn1.Numerator == fn2.Numerator && fn1.Denominator == fn2.Denominator);
 }
 
 bool operator<(const FracNum& fn1, const FracNum& fn2) {
