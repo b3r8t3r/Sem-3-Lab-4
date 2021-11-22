@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoggerDLL", "Logger DLL\Log
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FracNumDLL", "FracNum\FracNum.vcxproj", "{15AEB2D7-A529-47EB-B948-9BC1602CB895}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FracNumLib", "FracNumLib\FracNumLib.vcxproj", "{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{15AEB2D7-A529-47EB-B948-9BC1602CB895}.Release|x64.Build.0 = Release|x64
 		{15AEB2D7-A529-47EB-B948-9BC1602CB895}.Release|x86.ActiveCfg = Release|Win32
 		{15AEB2D7-A529-47EB-B948-9BC1602CB895}.Release|x86.Build.0 = Release|Win32
+		{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}.Debug|x64.ActiveCfg = Debug|x64
+		{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}.Debug|x64.Build.0 = Debug|x64
+		{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}.Debug|x86.Build.0 = Debug|Win32
+		{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}.Release|x64.ActiveCfg = Release|x64
+		{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}.Release|x64.Build.0 = Release|x64
+		{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}.Release|x86.ActiveCfg = Release|Win32
+		{5E15B9D2-05DE-4E0B-B1FB-C5DCFB39D403}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
