@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "..\Sem 3 Lab 4\FracNum.h"
 
-TEST(FracNum_Operator_Overload, Sum) {
+TEST(FracNum_Arithmetic_Operator_Overload, Sum) {
 	FracNum a(2,3), b(4,5), sum(22,15);
 	EXPECT_EQ(a + b, sum);
 	a = { -15,1 }, sum = {-71,5};
@@ -19,7 +19,7 @@ TEST(FracNum_Operator_Overload, Sum) {
 	EXPECT_EQ(a + x, sum);
 }
 
-TEST(FracNum_Operator_Overload, Sub) {
+TEST(FracNum_Arithmetic_Operator_Overload, Sub) {
 	FracNum a(2, 3), b(4, 5), sub(-2,15);
 	EXPECT_EQ(a - b, sub);
 	a = { -7, 9 }, sub = { -71,45 };
@@ -36,7 +36,7 @@ TEST(FracNum_Operator_Overload, Sub) {
 	EXPECT_EQ(a - x, sub);
 }
 
-TEST(FracNum_Operator_Overload, Mul) {
+TEST(FracNum_Arithmetic_Operator_Overload, Mul) {
 	FracNum a(2, 3), b(4, 5), mul(8, 15);
 	EXPECT_EQ(a * b, mul);
 	a = { -7, 9 }, mul = { -28,45 };
@@ -54,7 +54,7 @@ TEST(FracNum_Operator_Overload, Mul) {
 
 }
 
-TEST(FracNum_Operator_Overload, Div) {
+TEST(FracNum_Arithmetic_Operator_Overload, Div) {
 	FracNum a(2, 3), b(4, 5), div(5, 6);
 	EXPECT_EQ(a / b, div);
 	a = { 7, 9 }, div = { 35,36 };
@@ -71,10 +71,9 @@ TEST(FracNum_Operator_Overload, Div) {
 	EXPECT_EQ(a / x, div);
 }
 
-TEST(FracNum_Operator_Overload, Pow) {
-	FracNum a(2, 3), power(8, 15);
+TEST(FracNum_Arithmetic_Operator_Overload, Pow) {
+	FracNum a(2, 3), power(4, 9);
 	int x = 2;
-	a = { 2,3 }, power = { 4,9 };
 	EXPECT_EQ(a ^ x, power);
 	a = { -7, 9 }, power = { 49,81 };
 	EXPECT_EQ(a ^ x, power);
@@ -90,7 +89,7 @@ TEST(FracNum_Operator_Overload, Pow) {
 	EXPECT_EQ(a ^ x, power);
 }
 
-TEST(FracNum_Operator_Overload, More) {
+TEST(FracNum_Logical_Operator_Overload, More) {
 	FracNum a(2, 3), b(4, 5);
 	bool result = 0;
 	ASSERT_EQ(result, a>b);
@@ -100,7 +99,7 @@ TEST(FracNum_Operator_Overload, More) {
 	ASSERT_EQ(result, a > b);
 }
 
-TEST(FracNum_Operator_Overload, MoE) {
+TEST(FracNum_Logical_Operator_Overload, MoE) {
 	FracNum a(2, 3), b(4, 5);
 	bool result = 0;
 	ASSERT_EQ(result, a >= b);
@@ -110,7 +109,7 @@ TEST(FracNum_Operator_Overload, MoE) {
 	ASSERT_EQ(result, a >= b);
 }
 
-TEST(FracNum_Operator_Overload, Equal) {
+TEST(FracNum_Logical_Operator_Overload, Equal) {
 	FracNum a(2, 3), b(4, 5);
 	bool result = 0;
 	ASSERT_EQ(result, a == b);
@@ -120,7 +119,7 @@ TEST(FracNum_Operator_Overload, Equal) {
 	ASSERT_EQ(result, a == b);
 }
 
-TEST(FracNum_Operator_Overload, NEqual) {
+TEST(FracNum_Logical_Operator_Overload, NEqual) {
 	FracNum a(2, 3), b(4, 5);
 	bool result = 1;
 	ASSERT_EQ(result, a != b);
@@ -130,7 +129,7 @@ TEST(FracNum_Operator_Overload, NEqual) {
 	ASSERT_EQ(result, a != b);
 }
 
-TEST(FracNum_Operator_Overload, LoE) {
+TEST(FracNum_Logical_Operator_Overload, LoE) {
 	FracNum a(2, 3), b(4, 5);
 	bool result = 1;
 	ASSERT_EQ(result, a <= b);
@@ -140,7 +139,7 @@ TEST(FracNum_Operator_Overload, LoE) {
 	ASSERT_EQ(result, a <= b);
 }
 
-TEST(FracNum_Operator_Overload, Less) {
+TEST(FracNum_Logical_Operator_Overload, Less) {
 	FracNum a(2, 3), b(4, 5);
 	bool result = 1;
 	ASSERT_EQ(result, a < b);
