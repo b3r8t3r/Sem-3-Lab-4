@@ -13,7 +13,7 @@ FunnyGame::FunnyGame() : logger("FunnyGame", Enable) {
 }
 
 int FunnyGame::Start() {
-	Logger a("Start", Enable);
+	Logger a(" Start", Enable);
 	string choice;
 	cout << "Welcome to FunnyGame! \nYour goal is to guess the location of randomly generated points.\nThe number of points depends on the size of the field. \nFor example, if Grid is 5x5, the number of attempts is 5, the number of dots is 2 and you have to find only 1.\n\n";
 	cout << "Select game difficulty:\n1. Tutorial (Grid 3x3).\n2. Easy (Grid 10x10).\n3. Average (Grid 15x15).\n4. Hard (Grid 20x20).\n: ";
@@ -54,13 +54,13 @@ int FunnyGame::Start() {
 }
 
 void FunnyGame::GridsResize(int num) {
-	Logger a("Start", Enable);
+	Logger a(" Start", Enable);
 	Row.assign(num, vector<bool>(num));
 	PRow.assign(num, vector<bool>(num));
 }
 
 void FunnyGame::RowFill(int num){
-	Logger a("RowFill", Enable);
+	Logger a(" RowFill", Enable);
 	
 	int x = 0,y = 0;
 	for (int i = 0; i < num / 2; i++) {
@@ -75,12 +75,12 @@ void FunnyGame::RowFill(int num){
 }
 
 bool FunnyGame::random() {
-	Logger a("random", Enable);
+	Logger a(" random", Enable);
 	return (rand() % 2 == 0);
 }
 
 void FunnyGame::ShowPlayerGrid(int num) {
-	Logger a("ShowPlayerGrid", Enable);
+	Logger a(" ShowPlayerGrid", Enable);
 	
 	cout << endl << "\t\t ";
 
@@ -102,7 +102,7 @@ void FunnyGame::ShowPlayerGrid(int num) {
 }
 
 void FunnyGame::ShowGrids(int num) {
-	Logger a("ShowGrids", Enable);
+	Logger a(" ShowGrids", Enable);
 
 	cout << endl << "\t\t ";
 
@@ -136,7 +136,7 @@ void FunnyGame::ShowGrids(int num) {
 }
 
 void FunnyGame::CheckDot(int num) {
-	Logger a("CheckDot", Enable);
+	Logger a(" CheckDot", Enable);
 	count = 0;
 	for (int i = 0; i < num; i++) {
 		if (!CheatMode) ShowPlayerGrid(num);
@@ -179,7 +179,7 @@ void FunnyGame::CheckDot(int num) {
 }
 
 bool FunnyGame::isWin(int num){
-	Logger a("isWin", Enable);
+	Logger a(" isWin", Enable);
 	ShowGrids(num);
 	if (count>=(num/3)) { cout << "You won the game!\n"; return true; }
 	else { cout << "You lose the game!\n"; return false; }

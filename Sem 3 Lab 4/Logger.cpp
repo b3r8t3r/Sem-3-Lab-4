@@ -8,7 +8,7 @@ bool Enable = false;
 
 Logger::Logger(const string& str, const bool _enable) : nameClass(str, _enable) {
     enable = _enable;
-    if (enable) cout << endl << "Construct " << str << endl;
+    if (enable) cout << endl << "Construct " << nameClass << endl;
 }
 
 Logger::~Logger() {
