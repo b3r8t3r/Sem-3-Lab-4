@@ -2,10 +2,10 @@
 #include <math.h>
 #include <vector>
 
-#include "FracNum.h"
-#include "Game.h"
-#include "IError.h"
-#include "Logger.h"
+#include "..\..\Sem 3 Lab 6 Lib Files\FracNum\FracNum.h"
+#include "..\..\Sem 3 Lab 6 Lib Files\Game\Game.h"
+#include "..\..\Sem 3 Lab 6 Lib Files\IError\IError.h"
+#include "..\..\Sem 3 Lab 6 Lib Files\Logger\Logger.h"
 
 using namespace std;
 

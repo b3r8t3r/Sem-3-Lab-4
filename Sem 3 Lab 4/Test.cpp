@@ -1,6 +1,6 @@
 #define BOOST_TEST_MODULE mytests
 #include <boost/test/included/unit_test.hpp>
-#include "FracNum.h"
+#include "..\..\Sem 3 Lab 6 Lib Files\FracNum\FracNum.h"
 
 
 BOOST_AUTO_TEST_SUITE(FracNum_Arithmetic_Operator_Overload)

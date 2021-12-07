@@ -80,7 +80,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\shuva\OneDrive\source\repos\Programming\Semester 3\Sem 3 Lab 6\Sem 3 Lab 4\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\shuva\YandexDisk\source\repos\Programming\Semester 3\Sem 3 Lab 6 Lib Files\x64\Debug;C:\Users\shuva\YandexDisk\source\repos\Programming\Semester 3\Sem 3 Lab 6\Sem 3 Lab 4\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>FracNum.obj;IError.obj;Logger.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

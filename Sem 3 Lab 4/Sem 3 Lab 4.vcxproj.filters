@@ -18,34 +18,28 @@
     <ClCompile Include="Sem 3 Lab 6.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="FracNum.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="IError.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FracNum.h">
+    <Library Include="..\..\Sem 3 Lab 6 Lib Files\x64\Debug\FracNum.lib" />
+    <Library Include="..\..\Sem 3 Lab 6 Lib Files\x64\Debug\Game.lib" />
+    <Library Include="..\..\Sem 3 Lab 6 Lib Files\x64\Debug\IError.lib" />
+    <Library Include="..\..\Sem 3 Lab 6 Lib Files\x64\Debug\Logger.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sem 3 Lab 6 Lib Files\FracNum\FracNum.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="..\..\Sem 3 Lab 6 Lib Files\Game\Game.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Logger.h">
+    <ClInclude Include="..\..\Sem 3 Lab 6 Lib Files\IError\IError.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="IError.h">
+    <ClInclude Include="..\..\Sem 3 Lab 6 Lib Files\Logger\Logger.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
