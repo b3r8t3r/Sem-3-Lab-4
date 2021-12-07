@@ -1,9 +1,9 @@
-﻿// FracNumLib.cpp : Определяет функции для статической библиотеки.
+﻿// IErrorDLL.cpp : Определяет экспортируемые функции для DLL.
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "FracNumLib.h"
+#include "IErrorDLL.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -12,7 +12,7 @@
 
 // Единственный объект приложения
 
-CWinApp theApp;
+
 
 using namespace std;
 
@@ -44,8 +44,4 @@ int main()
     }
 
     return nRetCode;
-}
-// TODO: Это пример библиотечной функции.
-void fnFracNumLib()
-{
 }

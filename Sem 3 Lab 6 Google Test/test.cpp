@@ -4,7 +4,7 @@
 TEST(FracNum_Arithmetic_Operator_Overload, Sum) {
 	FracNum a(2,3), b(4,5), sum(22,15);
 	EXPECT_EQ(a + b, sum);
-	a = { -15,1 }, sum = {-71,5};
+	a = { -15,2 }, sum = {-71,5};
 	EXPECT_EQ(a + b, sum);
 	a = { 0,5 };
 	EXPECT_EQ(a + b, b);
