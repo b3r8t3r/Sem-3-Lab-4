@@ -12,20 +12,20 @@ namespace Sem3Lab6UnitTest
 		
 		TEST_METHOD(Sum)
 		{
-			FracNum a(2, 3), b(4, 5), sum(22, 15);
-			Assert::IsTrue(a + b == sum);
-			a = { -15,1 }, sum = { -71,5 };
-			Assert::IsTrue(a + b == sum);
-			a = { 0,5 };
-			Assert::IsTrue(a + b == b);
+				FracNum a(2, 3), b(4, 5), sum(22, 15);
+				Assert::IsTrue(a + b == sum);
+				a = { -15,1 }, sum = { -71,5 };
+				Assert::IsTrue(a + b == sum);
+				a = { 0,5 };
+				Assert::IsTrue(a + b == b);
 
-			int x = 5;
-			a = { 2,3 }, sum = { 17,3 };
-			Assert::IsTrue(a + x == sum);
-			a = { -15,1 }, sum = { -10,1 };
-			Assert::IsTrue(a + x == sum);
-			a = { 0,5 }, sum = { 5,1 };
-			Assert::IsTrue(a + x == sum);
+				int x = 5;
+				a = { 2,3 }, sum = { 17,3 };
+				Assert::IsTrue(a + x == sum);
+				a = { -15,1 }, sum = { -10,1 };
+				Assert::IsTrue(a + x == sum);
+				a = { 0,5 }, sum = { 5,1 };
+				Assert::IsTrue(a + x == sum);
 		}
 
 		TEST_METHOD(Sub) {
