@@ -88,7 +88,7 @@ void FunnyGame::ShowPlayerGrid(int num) {
 	for (int i = 0;i<num;i++) cout << i << " ";
 	cout << endl << "\t\t ";
 	
-	for (int i=0;i<num;i++) cout << ((i<10)?"— ":"—— ");
+	for (int i = 0; i < num; i++) cout << ((i < 10) ? "_ " : "__ ");
 
 	cout << endl;
 	for (int i = 0; i < num; i++) {
@@ -114,11 +114,11 @@ void FunnyGame::ShowGrids(int num) {
 
 	cout << endl << "\t\t ";
 
-	for (int i = 0; i < num; i++) cout << ((i < 10) ? "— " : "—— ");
+	for (int i = 0; i < num; i++) cout << ((i < 10) ? "_ " : "__ ");
 
 	cout << "\t   \t ";
 
-	for (int i = 0; i < num; i++) cout << ((i < 10) ? "— " : "—— ");
+	for (int i = 0; i < num; i++) cout << ((i < 10) ? "_ " : "__ ");
 
 	cout << endl;
 	for (int i = 0; i < num; i++) {

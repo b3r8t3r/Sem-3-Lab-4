@@ -1,8 +1,8 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <string>
 #include <ctime>
+#include <iostream>
+#include <string>
+#include <vector>
 
 #include "Logger.h"
 
@@ -14,21 +14,21 @@ const int AVERAGE = 15;
 const int HARD = 20;
 
 class FunnyGame {
-private:
-	vector< vector <bool> > Row , PRow;
-	int Difficulty; //Переменная, отвечающая за 
-	int count;
-	bool CheatMode;
-public:
-	Logger logger;
-	FunnyGame(); //Инициализация игры
-	int Start(); //
-	void GridsResize(int num);
-	void RowFill(int num);
-	bool random();
-	void ShowPlayerGrid(int num);
-	void ShowGrids(int num);
-	void CheckDot(int num);
-	bool isWin(int num);	//Функция для определения победы
-};
+ private:
+  vector<vector<bool> > Row, PRow;
+  int Difficulty;  // РџРµСЂРµРјРµРЅРЅР°СЏ, РѕС‚РІРµС‡Р°СЋС‰Р°СЏ Р·Р° СЃР»РѕР¶РЅРѕСЃС‚СЊ РёРіСЂС‹
+  int count;
+  bool CheatMode;
 
+ public:
+  Logger logger;
+  FunnyGame();  // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РёРіСЂС‹
+  int Start();  //
+  void GridsResize(int num);
+  void RowFill(int num);
+  bool random();
+  void ShowPlayerGrid(int num);
+  void ShowGrids(int num);
+  void CheckDot(int num);
+  bool isWin(int num);  //Р¤СѓРЅРєС†РёСЏ РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРёСЏ РїРѕР±РµРґС‹
+};

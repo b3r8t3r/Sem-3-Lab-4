@@ -1,52 +1,49 @@
 #pragma once
-#include <iostream>
 #include <math.h>
+
+#include <iostream>
 #include <vector>
 
 #include "Logger.h"
 
 using namespace std;
 
-int GCD(int x, int y);  //Íàõîæäåíèå ÍÎÄ
+int GCD(int x, int y);  //ÐÐ°Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ ÐÐžÐ”
 
-class FracNum {    //Êëàññ ðàáîòû ñ äðîáÿìè
-private:
-    double Numerator;       //×èñëèòåëü
-    double Denominator;     //Çíàìåíàòåëü
-    double Nod;             //ÍÎÄ (íàèáîëüøé îáùèé äåëèòåëü)
-public:
-    Logger logger;
-    FracNum();
-    FracNum(double num, double denum);
-    ~FracNum();
-    //Îïåðàòîðû ââîäà è âûâîäà
-    friend istream& operator>>(istream& is, FracNum& fn);
-    friend ostream& operator<<(ostream& os, const FracNum& fn);
-    //Àðèôìåòè÷åñêèå îïåðàòîðû
-    friend FracNum operator+(const FracNum& fn1, const FracNum& fn2);
-    friend FracNum operator-(const FracNum& fn1, const FracNum& fn2);
-    friend FracNum operator*(const FracNum& fn1, const FracNum& fn2);
-    friend FracNum operator/(const FracNum& fn1, const FracNum& fn2);
-    friend FracNum operator^(const FracNum& fn, const int& power);
+class FracNum {  //ÐšÐ»Ð°ÑÑ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ Ð´Ñ€Ð¾Ð±ÑÐ¼Ð¸
+ private:
+  double Numerator;    //Ð§Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ
+  double Denominator;  //Ð—Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ
+  double Nod;          //ÐÐžÐ” (Ð½Ð°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐ¹ Ð¾Ð±Ñ‰Ð¸Ð¹ Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ)
+ public:
+  Logger logger;
+  FracNum();
+  FracNum(double num, double denum);
+  ~FracNum();
+  //ÐžÐ¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‹ Ð²Ð²Ð¾Ð´Ð° Ð¸ Ð²Ñ‹Ð²Ð¾Ð´Ð°
+  friend istream& operator>>(istream& is, FracNum& fn);
+  friend ostream& operator<<(ostream& os, const FracNum& fn);
+  //ÐÑ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‹
+  friend FracNum operator+(const FracNum& fn1, const FracNum& fn2);
+  friend FracNum operator-(const FracNum& fn1, const FracNum& fn2);
+  friend FracNum operator*(const FracNum& fn1, const FracNum& fn2);
+  friend FracNum operator/(const FracNum& fn1, const FracNum& fn2);
+  friend FracNum operator^(const FracNum& fn, const int& power);
 
-    friend FracNum operator+(const FracNum& fn, const int& inc);
-    friend FracNum operator-(const FracNum& fn, const int& dec);
-    friend FracNum operator*(const FracNum& fn, const int& mul);
-    friend FracNum operator/(const FracNum& fn, const int& div);
+  friend FracNum operator+(const FracNum& fn, const int& inc);
+  friend FracNum operator-(const FracNum& fn, const int& dec);
+  friend FracNum operator*(const FracNum& fn, const int& mul);
+  friend FracNum operator/(const FracNum& fn, const int& div);
 
-    FracNum& operator= (const FracNum& fn1);
-    //Ëîãè÷åêèå îïåðàòîðû
-    friend bool operator>(const FracNum& fn1, const FracNum& fn2);
-    friend bool operator>=(const FracNum& fn1, const FracNum& fn2);
-    friend bool operator==(const FracNum& fn1, const FracNum& fn2);
-    friend bool operator!=(const FracNum& fn1, const FracNum& fn2);
-    friend bool operator<=(const FracNum& fn1, const FracNum& fn2);
-    friend bool operator<(const FracNum& fn1, const FracNum& fn2);
+  FracNum& operator=(const FracNum& fn1);
+  //Ð›Ð¾Ð³Ð¸Ñ‡ÐµÐºÐ¸Ðµ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‹
+  friend bool operator>(const FracNum& fn1, const FracNum& fn2);
+  friend bool operator>=(const FracNum& fn1, const FracNum& fn2);
+  friend bool operator==(const FracNum& fn1, const FracNum& fn2);
+  friend bool operator!=(const FracNum& fn1, const FracNum& fn2);
+  friend bool operator<=(const FracNum& fn1, const FracNum& fn2);
+  friend bool operator<(const FracNum& fn1, const FracNum& fn2);
 };
-
-
-
-
 
 istream& operator>>(istream& is, FracNum& fn);
 ostream& operator<<(ostream& os, const FracNum& fn);
@@ -55,7 +52,7 @@ FracNum operator+(const FracNum& fn1, const FracNum& fn2);
 FracNum operator-(const FracNum& fn1, const FracNum& fn2);
 FracNum operator*(const FracNum& fn1, const FracNum& fn2);
 FracNum operator/(const FracNum& fn1, const FracNum& fn2);
-FracNum operator^(const FracNum& fn, const int & power);
+FracNum operator^(const FracNum& fn, const int& power);
 
 FracNum operator+(const FracNum& fn, const int& inc);
 FracNum operator-(const FracNum& fn, const int& dec);

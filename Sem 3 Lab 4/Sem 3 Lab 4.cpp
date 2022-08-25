@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <math.h>
 #include <vector>
 
@@ -48,8 +48,6 @@ void FracNumTest() {
 }
 
 int main(){
-
-	setlocale(LC_ALL, "Rus");
 	Logger main("main");
 	cout << "Выберите, включить ли логгер для программы или нет:\n1. Да.\n2. Нет.\n: ";
 	string _choice;
