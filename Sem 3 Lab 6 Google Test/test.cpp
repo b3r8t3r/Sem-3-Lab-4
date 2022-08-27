@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "..\..\Sem 3 Lab 6 Lib Files\FracNum\FracNum.h"
+#include <FracNum.h>
 
 TEST(FracNum_Arithmetic_Operator_Overload, Sum) {
 	FracNum a(2,3), b(4,5), sum(22,15);

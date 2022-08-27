@@ -1,11 +1,4 @@
-﻿#include <iostream>
-#include <math.h>
-#include <vector>
-
-#include "..\..\Sem 3 Lab 6 Lib Files\FracNum\FracNum.h"
-#include "..\..\Sem 3 Lab 6 Lib Files\Game\Game.h"
-#include "..\..\Sem 3 Lab 6 Lib Files\IError\IError.h"
-#include "..\..\Sem 3 Lab 6 Lib Files\Logger\Logger.h"
+﻿#include "main.h"
 
 using namespace std;
 
@@ -48,8 +41,6 @@ void FracNumTest() {
 }
 
 int main(){
-
-	setlocale(LC_ALL, "Rus");
 	Logger main("main");
 	cout << "Выберите, включить ли логгер для программы или нет:\n1. Да.\n2. Нет.\n: ";
 	string _choice;

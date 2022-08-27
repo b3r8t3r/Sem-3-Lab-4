@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "..\..\Sem 3 Lab 6 Lib Files\FracNum\FracNum.h"
+#include <FracNum.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
