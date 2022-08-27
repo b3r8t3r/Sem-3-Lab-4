@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sem 3 Lab 6", "Sem 3 Lab 4\Sem 3 Lab 4.vcxproj", "{EB6306AD-A9CC-4129-8DBB-53152CE950A9}"
-	ProjectSection(ProjectDependencies) = postProject
-		{213DFE61-6405-448B-9894-C575B1C477AE} = {213DFE61-6405-448B-9894-C575B1C477AE}
-		{6E287CAE-D8EA-4A83-A5E2-8C62E6B3179A} = {6E287CAE-D8EA-4A83-A5E2-8C62E6B3179A}
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sem 3 Lab 6 Google Test", "Sem 3 Lab 6 Google Test\Sem 3 Lab 6 Google Test.vcxproj", "{C5C2B229-4D18-4930-A613-3B71D6FB78E7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{213DFE61-6405-448B-9894-C575B1C477AE} = {213DFE61-6405-448B-9894-C575B1C477AE}
@@ -40,6 +34,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IError", "IError\IError.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logger", "Logger\Logger.vcxproj", "{AC5E6CBA-B656-4FB2-9EE8-51E5EFD6FFE6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sem 3 Lab 6", "Sem 3 Lab 6\Sem 3 Lab 6.vcxproj", "{60E81822-3CDE-4E1A-A774-38E73C68F0EF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{213DFE61-6405-448B-9894-C575B1C477AE} = {213DFE61-6405-448B-9894-C575B1C477AE}
+		{6E287CAE-D8EA-4A83-A5E2-8C62E6B3179A} = {6E287CAE-D8EA-4A83-A5E2-8C62E6B3179A}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -48,14 +48,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB6306AD-A9CC-4129-8DBB-53152CE950A9}.Debug|x64.ActiveCfg = Debug|x64
-		{EB6306AD-A9CC-4129-8DBB-53152CE950A9}.Debug|x64.Build.0 = Debug|x64
-		{EB6306AD-A9CC-4129-8DBB-53152CE950A9}.Debug|x86.ActiveCfg = Debug|Win32
-		{EB6306AD-A9CC-4129-8DBB-53152CE950A9}.Debug|x86.Build.0 = Debug|Win32
-		{EB6306AD-A9CC-4129-8DBB-53152CE950A9}.Release|x64.ActiveCfg = Release|x64
-		{EB6306AD-A9CC-4129-8DBB-53152CE950A9}.Release|x64.Build.0 = Release|x64
-		{EB6306AD-A9CC-4129-8DBB-53152CE950A9}.Release|x86.ActiveCfg = Release|Win32
-		{EB6306AD-A9CC-4129-8DBB-53152CE950A9}.Release|x86.Build.0 = Release|Win32
 		{C5C2B229-4D18-4930-A613-3B71D6FB78E7}.Debug|x64.ActiveCfg = Debug|x64
 		{C5C2B229-4D18-4930-A613-3B71D6FB78E7}.Debug|x64.Build.0 = Debug|x64
 		{C5C2B229-4D18-4930-A613-3B71D6FB78E7}.Debug|x86.ActiveCfg = Debug|Win32
@@ -112,6 +104,14 @@ Global
 		{AC5E6CBA-B656-4FB2-9EE8-51E5EFD6FFE6}.Release|x64.Build.0 = Release|x64
 		{AC5E6CBA-B656-4FB2-9EE8-51E5EFD6FFE6}.Release|x86.ActiveCfg = Release|Win32
 		{AC5E6CBA-B656-4FB2-9EE8-51E5EFD6FFE6}.Release|x86.Build.0 = Release|Win32
+		{60E81822-3CDE-4E1A-A774-38E73C68F0EF}.Debug|x64.ActiveCfg = Debug|x64
+		{60E81822-3CDE-4E1A-A774-38E73C68F0EF}.Debug|x64.Build.0 = Debug|x64
+		{60E81822-3CDE-4E1A-A774-38E73C68F0EF}.Debug|x86.ActiveCfg = Debug|Win32
+		{60E81822-3CDE-4E1A-A774-38E73C68F0EF}.Debug|x86.Build.0 = Debug|Win32
+		{60E81822-3CDE-4E1A-A774-38E73C68F0EF}.Release|x64.ActiveCfg = Release|x64
+		{60E81822-3CDE-4E1A-A774-38E73C68F0EF}.Release|x64.Build.0 = Release|x64
+		{60E81822-3CDE-4E1A-A774-38E73C68F0EF}.Release|x86.ActiveCfg = Release|Win32
+		{60E81822-3CDE-4E1A-A774-38E73C68F0EF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
